@@ -1,6 +1,4 @@
-// ===========================
 // AOS INITIALIZATION
-// ===========================
 AOS.init({
     duration: 800,
     easing: 'ease-in-out',
@@ -8,9 +6,7 @@ AOS.init({
     offset: 100,
 });
 
-// ===========================
 // NAVIGATION MENU
-// ===========================
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -39,9 +35,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// ===========================
 // ACTIVE LINK ON SCROLL
-// ===========================
 window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('section');
@@ -62,9 +56,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ===========================
 // CONTACT FORM
-// ===========================
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
@@ -86,9 +78,7 @@ if (contactForm) {
     });
 }
 
-// ===========================
 // NOTIFICATION FUNCTION
-// ===========================
 function showNotification(message, type) {
     const notification = document.createElement('div');
     notification.textContent = message;
@@ -113,9 +103,7 @@ function showNotification(message, type) {
     }, 3000);
 }
 
-// ===========================
 // NOTIFICATION FUNCTION
-// ===========================
 function showNotification(message, type) {
     const notification = document.createElement('div');
     notification.textContent = message;
@@ -140,9 +128,7 @@ function showNotification(message, type) {
     }, 3000);
 }
 
-// ===========================
 // FAQ ACCORDION
-// ===========================
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
@@ -163,9 +149,7 @@ faqItems.forEach(item => {
     }
 });
 
-// ===========================
 // PROJECT FILTER
-// ===========================
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card-full');
 
